@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+
+  anaconda:
+    build: .
+    tty: true
+    ports:
+      - "8888:8888"
+    networks:
+      - docker-anaconda
+    volumes:
+      - data:/opt/notebooks
+
+networks:
+  docker-anaconda:
+volumes:
+  data:
