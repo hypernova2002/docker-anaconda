@@ -4,11 +4,11 @@ Generates a Docker container using the [ContinuumIO container](https://github.co
 # Installation
 Build the anaconda docker image. Download the base image and run package updates from the Dockerfile
 
-  $ docker-compose build
+    $ docker-compose build
 
 # Run
 Start the docker container, with networking and a persistent data volume
 
-  $ docker-compose up
+    $ docker-compose up
 
 Enter `http://localhost:8888` in your browser.
